@@ -1,0 +1,364 @@
+[gd_scene load_steps=42 format=3 uid="uid://b0lx6so8x86fa"]
+
+[ext_resource type="Script" uid="uid://civqw0w6pkfnk" path="res://juego_3.gd" id="1_g3t1s"]
+[ext_resource type="Texture2D" uid="uid://ct8pv7s1yhf51" path="res://fondo_almuerzo.jpg" id="2_16q3e"]
+[ext_resource type="Texture2D" uid="uid://d13uy68eogwxy" path="res://boton_receta_almuerzo.png" id="3_qfou4"]
+[ext_resource type="Texture2D" uid="uid://24p3tqusrh4r" path="res://receta_almuerzo.png" id="4_2kwmj"]
+[ext_resource type="Texture2D" uid="uid://cp4akys2w5rk6" path="res://boton_x_almuerzo.png" id="5_b5jam"]
+[ext_resource type="Texture2D" uid="uid://bf7x4wpjuw0qk" path="res://Anthony.png" id="6_utqk1"]
+[ext_resource type="Texture2D" uid="uid://bns4vmq7gjd0u" path="res://Chef.png" id="7_2vxvm"]
+[ext_resource type="Texture2D" uid="uid://dkaf0062t36mt" path="res://papa.png" id="8_fe1l6"]
+[ext_resource type="Texture2D" uid="uid://sa87tke0d7fw" path="res://zanahoria.png" id="9_uwfhi"]
+[ext_resource type="Texture2D" uid="uid://blq3ds0k8d8np" path="res://apio.png" id="10_ktd3u"]
+[ext_resource type="Texture2D" uid="uid://dcr73lh6abs0e" path="res://ajo.png" id="11_wdkyx"]
+[ext_resource type="Texture2D" uid="uid://coqsgq4j320yd" path="res://cebolla.png" id="12_w5mp7"]
+[ext_resource type="Texture2D" uid="uid://bg61qsw1ja8kl" path="res://arvejas.png" id="13_dodd7"]
+[ext_resource type="Texture2D" uid="uid://bk18cvb5cbj25" path="res://papa_en_plato.png" id="14_xj1vs"]
+[ext_resource type="Texture2D" uid="uid://bal8xo7oc8a0l" path="res://ajo_en_plato.png" id="15_646rg"]
+[ext_resource type="Texture2D" uid="uid://dmfsbuihscqrv" path="res://cebolla_en_plato.png" id="16_tbons"]
+[ext_resource type="Texture2D" uid="uid://cnsxksatojkjj" path="res://ajo_molido.png" id="17_ql8u2"]
+[ext_resource type="Texture2D" uid="uid://cddmvnti2bowj" path="res://cebolla_picada.png" id="18_nnwl5"]
+[ext_resource type="Texture2D" uid="uid://dr32ta48ec3mt" path="res://zanahoria_picada.png" id="19_28xi4"]
+[ext_resource type="Texture2D" uid="uid://bbug1o71nkrly" path="res://papa_picada.png" id="20_ji2jj"]
+[ext_resource type="Texture2D" uid="uid://g4jdn4noonl8" path="res://arveja_sin_cascara.png" id="21_eloe0"]
+[ext_resource type="Texture2D" uid="uid://chikn1tlmqggc" path="res://arveja_en_plato.png" id="22_rrjvk"]
+[ext_resource type="Texture2D" uid="uid://c8eb25swrqrc5" path="res://cuchillo.png" id="23_tp8h6"]
+[ext_resource type="Texture2D" uid="uid://r3r8k5tc5hed" path="res://platos_vacio.png" id="24_b21ym"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fe1l6"]
+radius = 106.033
+height = 212.066
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uwfhi"]
+radius = 99.0244
+height = 198.049
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ktd3u"]
+size = Vector2(690.168, 66)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wdkyx"]
+radius = 93.0591
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w5mp7"]
+radius = 118.592
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dodd7"]
+size = Vector2(278, 141.346)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xj1vs"]
+radius = 195.149
+height = 390.299
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_646rg"]
+radius = 170.436
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tbons"]
+radius = 208.959
+height = 417.918
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ql8u2"]
+radius = 94.7629
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nnwl5"]
+radius = 146.143
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_28xi4"]
+size = Vector2(366.024, 196.853)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ji2jj"]
+size = Vector2(374, 194)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eloe0"]
+size = Vector2(393.435, 180.165)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rrjvk"]
+radius = 203.226
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_tp8h6"]
+a = Vector2(-77.5156, -93.9262)
+b = Vector2(100.655, 87.9816)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b21ym"]
+size = Vector2(190, 93)
+
+[node name="Juego3" type="Node2D"]
+script = ExtResource("1_g3t1s")
+
+[node name="fondo3" type="Sprite2D" parent="."]
+position = Vector2(679, 333)
+scale = Vector2(1.14083, 1.47556)
+texture = ExtResource("2_16q3e")
+
+[node name="Anthony" type="Sprite2D" parent="."]
+position = Vector2(511, 299)
+scale = Vector2(0.875, 0.880208)
+texture = ExtResource("6_utqk1")
+
+[node name="Chef" type="Sprite2D" parent="."]
+position = Vector2(825, 217)
+texture = ExtResource("7_2vxvm")
+
+[node name="boton_receta_almuerzo" type="Sprite2D" parent="."]
+position = Vector2(140, 85)
+scale = Vector2(0.50641, 0.461379)
+texture = ExtResource("3_qfou4")
+
+[node name="receta_almuerzo" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(590.5, 329.5)
+scale = Vector2(0.622396, 0.612037)
+texture = ExtResource("4_2kwmj")
+
+[node name="boton_x_almuerzo" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1086, 63)
+scale = Vector2(0.110894, 0.0958252)
+texture = ExtResource("5_b5jam")
+
+[node name="papa" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(343, 468)
+scale = Vector2(0.634361, 0.660171)
+texture = ExtResource("8_fe1l6")
+
+[node name="AreaPapa" type="Area2D" parent="papa"]
+visible = false
+position = Vector2(-4.57764e-05, 9.0885)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="papa/AreaPapa"]
+visible = false
+shape = SubResource("CapsuleShape2D_fe1l6")
+
+[node name="zanahoria" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(384, 468)
+scale = Vector2(0.624601, 0.706897)
+texture = ExtResource("9_uwfhi")
+
+[node name="AreaZanahoria" type="Area2D" parent="zanahoria"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zanahoria/AreaZanahoria"]
+visible = false
+position = Vector2(0, 24.0488)
+shape = SubResource("CapsuleShape2D_uwfhi")
+one_way_collision_margin = 0.0
+
+[node name="apio" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(199, 409)
+scale = Vector2(0.436126, 0.5)
+texture = ExtResource("10_ktd3u")
+
+[node name="AreaApio" type="Area2D" parent="apio"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="apio/AreaApio"]
+visible = false
+position = Vector2(37.8331, 23)
+shape = SubResource("RectangleShape2D_ktd3u")
+
+[node name="ajo" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(343, 468)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_wdkyx")
+
+[node name="AreaAjo" type="Area2D" parent="ajo"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ajo/AreaAjo"]
+visible = false
+shape = SubResource("CircleShape2D_wdkyx")
+
+[node name="cebolla" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(343, 468)
+scale = Vector2(0.6639, 0.666667)
+texture = ExtResource("12_w5mp7")
+
+[node name="AreaCebolla" type="Area2D" parent="cebolla"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cebolla/AreaCebolla"]
+visible = false
+shape = SubResource("CircleShape2D_w5mp7")
+
+[node name="arvejas" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(343, 468)
+scale = Vector2(0.5, 0.615512)
+texture = ExtResource("13_dodd7")
+
+[node name="AreaArvejas" type="Area2D" parent="arvejas"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arvejas/AreaArvejas"]
+visible = false
+position = Vector2(-3, 20.3082)
+shape = SubResource("RectangleShape2D_dodd7")
+
+[node name="papa_en_plato" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(679, 468)
+scale = Vector2(0.409942, 0.430556)
+texture = ExtResource("14_xj1vs")
+
+[node name="AreaPapaPlato" type="Area2D" parent="papa_en_plato"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="papa_en_plato/AreaPapaPlato"]
+visible = false
+shape = SubResource("CapsuleShape2D_xj1vs")
+
+[node name="ajo_en_plato" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(866, 409)
+scale = Vector2(0.339943, 0.429178)
+texture = ExtResource("15_646rg")
+
+[node name="AreaAjoPlato" type="Area2D" parent="ajo_en_plato"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ajo_en_plato/AreaAjoPlato"]
+visible = false
+shape = SubResource("CircleShape2D_646rg")
+
+[node name="cebolla_en_plato" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1027, 478.438)
+scale = Vector2(0.339779, 0.466304)
+texture = ExtResource("16_tbons")
+
+[node name="AreaCebollaPlato" type="Area2D" parent="cebolla_en_plato"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cebolla_en_plato/AreaCebollaPlato"]
+visible = false
+shape = SubResource("CapsuleShape2D_tbons")
+
+[node name="ajo_molido" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(343, 474)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("17_ql8u2")
+
+[node name="AreaAjoMolido" type="Area2D" parent="ajo_molido"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ajo_molido/AreaAjoMolido"]
+visible = false
+shape = SubResource("CircleShape2D_ql8u2")
+
+[node name="cebolla_picada" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(343, 468)
+scale = Vector2(0.485827, 0.59887)
+texture = ExtResource("18_nnwl5")
+
+[node name="AreaCebollaPicada" type="Area2D" parent="cebolla_picada"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cebolla_picada/AreaCebollaPicada"]
+visible = false
+shape = SubResource("CircleShape2D_nnwl5")
+
+[node name="zanahoria_picada" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(407, 468)
+scale = Vector2(0.535484, 0.599432)
+texture = ExtResource("19_28xi4")
+
+[node name="AreaZanahoriaPicada" type="Area2D" parent="zanahoria_picada"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zanahoria_picada/AreaZanahoriaPicada"]
+visible = false
+position = Vector2(-9.33734, 6.67303)
+shape = SubResource("RectangleShape2D_28xi4")
+
+[node name="papa_picada" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(343, 468)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("20_ji2jj")
+
+[node name="AreaPapaPicada" type="Area2D" parent="papa_picada"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="papa_picada/AreaPapaPicada"]
+visible = false
+position = Vector2(-17, 15)
+shape = SubResource("RectangleShape2D_ji2jj")
+
+[node name="arveja_sin_cascara" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(343, 468)
+scale = Vector2(0.419383, 0.460688)
+texture = ExtResource("21_eloe0")
+
+[node name="AreaArvejaSinCascara" type="Area2D" parent="arveja_sin_cascara"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arveja_sin_cascara/AreaArvejaSinCascara"]
+visible = false
+position = Vector2(-3.5766, 31.4747)
+shape = SubResource("RectangleShape2D_eloe0")
+
+[node name="arveja_en_plato" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(123, 468)
+scale = Vector2(0.486175, 0.502611)
+texture = ExtResource("22_rrjvk")
+
+[node name="AreaArvejaPlato" type="Area2D" parent="arveja_en_plato"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arveja_en_plato/AreaArvejaPlato"]
+visible = false
+shape = SubResource("CircleShape2D_rrjvk")
+
+[node name="cuchillo" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1022, 421)
+scale = Vector2(0.864341, 0.841085)
+texture = ExtResource("23_tp8h6")
+
+[node name="AreaCuchillo" type="Area2D" parent="cuchillo"]
+visible = false
+position = Vector2(7.15256e-05, 9.51152)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cuchillo/AreaCuchillo"]
+visible = false
+shape = SubResource("SegmentShape2D_tp8h6")
+
+[node name="platos_vacio" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(746, 468)
+texture = ExtResource("24_b21ym")
+
+[node name="AreaPlatoVacio" type="Area2D" parent="platos_vacio"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platos_vacio/AreaPlatoVacio"]
+visible = false
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_b21ym")
+
+[connection signal="area_entered" from="papa/AreaPapa" to="." method="_on_area_papa_area_entered"]
+[connection signal="area_entered" from="zanahoria/AreaZanahoria" to="." method="_on_area_zanahoria_area_entered"]
+[connection signal="area_entered" from="apio/AreaApio" to="." method="_on_area_apio_area_entered"]
+[connection signal="area_entered" from="ajo/AreaAjo" to="." method="_on_area_ajo_area_entered"]
+[connection signal="area_entered" from="cebolla/AreaCebolla" to="." method="_on_area_cebolla_area_entered"]
+[connection signal="area_entered" from="arvejas/AreaArvejas" to="." method="_on_area_arvejas_area_entered"]
+[connection signal="area_entered" from="papa_en_plato/AreaPapaPlato" to="." method="_on_area_papa_plato_area_entered"]
+[connection signal="area_entered" from="ajo_en_plato/AreaAjoPlato" to="." method="_on_area_ajo_plato_area_entered"]
+[connection signal="area_entered" from="cebolla_en_plato/AreaCebollaPlato" to="." method="_on_area_cebolla_plato_area_entered"]
+[connection signal="area_entered" from="ajo_molido/AreaAjoMolido" to="." method="_on_area_ajo_molido_area_entered"]
+[connection signal="area_entered" from="cebolla_picada/AreaCebollaPicada" to="." method="_on_area_cebolla_picada_area_entered"]
+[connection signal="area_entered" from="zanahoria_picada/AreaZanahoriaPicada" to="." method="_on_area_zanahoria_picada_area_entered"]
+[connection signal="area_entered" from="papa_picada/AreaPapaPicada" to="." method="_on_area_papa_picada_area_entered"]
+[connection signal="area_entered" from="arveja_sin_cascara/AreaArvejaSinCascara" to="." method="_on_area_arveja_sin_cascara_area_entered"]
+[connection signal="area_entered" from="arveja_en_plato/AreaArvejaPlato" to="." method="_on_area_arveja_plato_area_entered"]
+[connection signal="area_entered" from="cuchillo/AreaCuchillo" to="." method="_on_area_cuchillo_area_entered"]
+[connection signal="area_entered" from="platos_vacio/AreaPlatoVacio" to="." method="_on_area_plato_vacio_area_entered"]

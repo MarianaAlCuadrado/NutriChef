@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqmrbdjc7tpmt"]
+
+[ext_resource type="Script" uid="uid://cj5tey13sp1ih" path="res://animacion.gd" id="1_yrru1"]
+
+[node name="animacion" type="Node2D"]
+script = ExtResource("1_yrru1")
+
+[node name="VideoPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 1153.0
+offset_bottom = 644.0

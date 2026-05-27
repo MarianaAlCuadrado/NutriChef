@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://dr2dquo0j84nl"]
+
+[ext_resource type="Texture2D" uid="uid://byq1ortjfp1r7" path="res://portada.png" id="1_i68s5"]
+[ext_resource type="Script" uid="uid://cxfh6y3vqfusw" path="res://portada.gd" id="1_iqfp0"]
+[ext_resource type="Texture2D" uid="uid://d2x4slyul2s6u" path="res://boton play.png" id="2_iqfp0"]
+[ext_resource type="Texture2D" uid="uid://ct06g0kvc0qbq" path="res://pollo chef.png" id="3_bn2kn"]
+[ext_resource type="AudioStream" uid="uid://dmjnsr6w603o3" path="res://WHAT IS LOVE_, Twice - 8 bits.mp3" id="5_bn2kn"]
+[ext_resource type="Texture2D" uid="uid://bvcg1r15tu1k3" path="res://boton_ia.png" id="6_oo5vf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3bevb"]
+size = Vector2(263.788, 247)
+
+[node name="Portada" type="Node2D"]
+script = ExtResource("1_iqfp0")
+
+[node name="portada" type="Sprite2D" parent="."]
+position = Vector2(573, 329)
+rotation = 3.14159
+scale = Vector2(-1.81304, -1.82961)
+texture = ExtResource("1_i68s5")
+
+[node name="boton_play" type="Sprite2D" parent="."]
+position = Vector2(315, 319)
+scale = Vector2(1.32143, 1.36885)
+texture = ExtResource("2_iqfp0")
+
+[node name="pollo chef" type="Sprite2D" parent="."]
+position = Vector2(904.5, 319)
+scale = Vector2(0.386, 0.366)
+texture = ExtResource("3_bn2kn")
+
+[node name="musica_portada" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_bn2kn")
+autoplay = true
+
+[node name="boton_ia" type="Sprite2D" parent="."]
+position = Vector2(693, 186)
+scale = Vector2(0.420792, 0.384615)
+texture = ExtResource("6_oo5vf")
+
+[node name="AreaBotonIA" type="Area2D" parent="boton_ia"]
+position = Vector2(-11.8824, 5.2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boton_ia/AreaBotonIA"]
+position = Vector2(15.4473, -1.29996)
+shape = SubResource("RectangleShape2D_3bevb")
+
+[connection signal="area_entered" from="boton_ia/AreaBotonIA" to="." method="_on_area_boton_ia_area_entered"]

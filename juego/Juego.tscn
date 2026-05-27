@@ -1,0 +1,307 @@
+[gd_scene load_steps=45 format=3 uid="uid://dc2ln301f0aon"]
+
+[ext_resource type="Texture2D" uid="uid://bbkjis41sa1oy" path="res://aguacate.png" id="1_bb1ij"]
+[ext_resource type="Script" uid="uid://jcg3e531bxtd" path="res://juego.gd" id="1_bm2u2"]
+[ext_resource type="Texture2D" uid="uid://drjn4vucsxtqd" path="res://aguacate_entero_sin_cascara.png" id="3_uguqx"]
+[ext_resource type="Texture2D" uid="uid://bqhqimsfrw5f8" path="res://aguacate_partido_con_pepa.png" id="4_ecqux"]
+[ext_resource type="Texture2D" uid="uid://c5buiyujx34ah" path="res://aguacate_sin_pepa.png" id="5_flld4"]
+[ext_resource type="Texture2D" uid="uid://civrck5he22j1" path="res://aguacate_tajadas.png" id="6_fhirl"]
+[ext_resource type="Texture2D" uid="uid://c8eb25swrqrc5" path="res://cuchillo.png" id="7_rrymi"]
+[ext_resource type="Texture2D" uid="uid://di0d8lsnq1u5" path="res://tabla.png" id="8_cqgso"]
+[ext_resource type="Texture2D" uid="uid://cyt4ypecktvm7" path="res://tostada_con_aguacate.png" id="9_116di"]
+[ext_resource type="Texture2D" uid="uid://cxyjy34p5durr" path="res://tostada_en_plato.png" id="10_gs3ip"]
+[ext_resource type="Texture2D" uid="uid://ccvcckw356nws" path="res://Fondoo.png" id="11_bm2u2"]
+[ext_resource type="Texture2D" uid="uid://bns4vmq7gjd0u" path="res://Chef.png" id="12_ecqux"]
+[ext_resource type="Texture2D" uid="uid://bf7x4wpjuw0qk" path="res://Anthony.png" id="13_ecqux"]
+[ext_resource type="Texture2D" uid="uid://ol5f2bj5jns2" path="res://agua_con_tapa.png" id="14_flld4"]
+[ext_resource type="Texture2D" uid="uid://bbfhr32ohotsq" path="res://agua_sin_tapa.png" id="15_tw6dn"]
+[ext_resource type="Texture2D" uid="uid://xms2yelydlu3" path="res://vaso_vacio.png" id="16_yy6f6"]
+[ext_resource type="Texture2D" uid="uid://cstnjm7gqha60" path="res://vaso_con_agua.png" id="17_ugftd"]
+[ext_resource type="Texture2D" uid="uid://cj5i2etlemhxt" path="res://Estufa.png" id="18_f630p"]
+[ext_resource type="Texture2D" uid="uid://sdcsj2oh7k04" path="res://olla_vacia.png" id="19_ohocd"]
+[ext_resource type="Texture2D" uid="uid://bmj0dfeu2ht3u" path="res://olla_con_agua.png" id="20_pydt3"]
+[ext_resource type="Texture2D" uid="uid://bdj13ufv4v5x3" path="res://olla_con_huevo.png" id="21_ke64h"]
+[ext_resource type="Texture2D" uid="uid://r3r8k5tc5hed" path="res://platos_vacio.png" id="22_kmbed"]
+[ext_resource type="Texture2D" uid="uid://cirgy3lin51at" path="res://cuchara_con_huevo.png" id="23_mhc0r"]
+[ext_resource type="Texture2D" uid="uid://dvfe5rnsiv54o" path="res://cuchara.png" id="24_wq83k"]
+[ext_resource type="Texture2D" uid="uid://bmqg6nlats8tx" path="res://huevo.png" id="25_vr651"]
+[ext_resource type="Texture2D" uid="uid://bew0opvmvw66v" path="res://sal.png" id="26_8tv34"]
+[ext_resource type="Texture2D" uid="uid://bp8ihaod4gksg" path="res://cuchara_sal.png" id="27_cio0b"]
+[ext_resource type="Texture2D" uid="uid://b4wdd2ew0sml7" path="res://cuchillo_arriba.png" id="28_0f05y"]
+[ext_resource type="Texture2D" uid="uid://dkced3icpf1wb" path="res://chia.png" id="29_n68kq"]
+[ext_resource type="Texture2D" uid="uid://c1f5towrox3lo" path="res://cuchara_chia.png" id="30_l5dlu"]
+[ext_resource type="Texture2D" uid="uid://rvdrq44x1d17" path="res://cuchara_pimienta.png" id="31_rnr2u"]
+[ext_resource type="Texture2D" uid="uid://cxeal6kp2ig5c" path="res://exprimidor.png" id="32_f2crs"]
+[ext_resource type="Texture2D" uid="uid://donplkmtawtj2" path="res://exprimidor_abierto.png" id="33_w2hrm"]
+[ext_resource type="Texture2D" uid="uid://cblx6lykukgtx" path="res://exprimidor_con_limon.png" id="34_8mkvi"]
+[ext_resource type="Texture2D" uid="uid://co2spj75r0rwl" path="res://huevo_pelado.png" id="35_w6hph"]
+[ext_resource type="Texture2D" uid="uid://bnruwlmfsm4s0" path="res://huevo_mitad.png" id="36_3occa"]
+[ext_resource type="Texture2D" uid="uid://d2vi88sfo2tkx" path="res://jugo_limon.png" id="37_iuqrv"]
+[ext_resource type="Texture2D" uid="uid://d10bxnr4si445" path="res://limon.png" id="38_flmiq"]
+[ext_resource type="Texture2D" uid="uid://dms541qti4hfh" path="res://limon_mitad.png" id="39_rq7va"]
+[ext_resource type="Texture2D" uid="uid://do565yfmmmxsn" path="res://pan.png" id="40_7krdq"]
+[ext_resource type="Texture2D" uid="uid://dh4ol1kxihac4" path="res://pimienta.png" id="41_x0w5t"]
+[ext_resource type="Texture2D" uid="uid://dub1onw66u05v" path="res://tostadora.png" id="42_61fdv"]
+[ext_resource type="Texture2D" uid="uid://bblc36g6npp4f" path="res://tostadora_con_pan.png" id="43_7f8lm"]
+[ext_resource type="AudioStream" uid="uid://k66fxu27x80e" path="res://MusicAvena.mp3" id="44_yy6f6"]
+
+[node name="Juego" type="Node2D"]
+script = ExtResource("1_bm2u2")
+
+[node name="aguacate" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(576, 525)
+scale = Vector2(0.596154, 0.607143)
+texture = ExtResource("1_bb1ij")
+
+[node name="aguacate_partido_con_pepa" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(1072, 162)
+scale = Vector2(1, 0.904372)
+texture = ExtResource("4_ecqux")
+
+[node name="aguacate_sin_pepa" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(1066, 363)
+scale = Vector2(0.987805, 0.915385)
+texture = ExtResource("5_flld4")
+
+[node name="aguacate_tajadas" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(591, 360)
+scale = Vector2(0.77795, 0.924359)
+texture = ExtResource("6_fhirl")
+
+[node name="cuchillo" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(716, 529)
+scale = Vector2(1.0155, 0.891473)
+texture = ExtResource("7_rrymi")
+
+[node name="tabla" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(319, 555)
+rotation = -2.03294
+scale = Vector2(2.0058, 2.03701)
+texture = ExtResource("8_cqgso")
+
+[node name="aguacate_entero_sin_cascara" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(720, 384)
+scale = Vector2(0.763566, 0.639535)
+texture = ExtResource("3_uguqx")
+
+[node name="tostada_con_aguacate" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(620, 115)
+texture = ExtResource("9_116di")
+
+[node name="tostada_en_plato" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(954, 526)
+scale = Vector2(0.739193, 0.777946)
+texture = ExtResource("10_gs3ip")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(581, 336)
+scale = Vector2(3.66139, 3.275)
+texture = ExtResource("11_bm2u2")
+
+[node name="Chef" type="Sprite2D" parent="."]
+position = Vector2(624, 287)
+scale = Vector2(1.28776, 1.1888)
+texture = ExtResource("12_ecqux")
+
+[node name="Anthony" type="Sprite2D" parent="."]
+position = Vector2(169, 352)
+scale = Vector2(1.10938, 1.13802)
+texture = ExtResource("13_ecqux")
+
+[node name="agua_con_tapa" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(398.5, 371.875)
+scale = Vector2(2.01167, 2.1177)
+texture = ExtResource("14_flld4")
+
+[node name="agua_sin_tapa" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(405, 376.25)
+scale = Vector2(1, 1.01844)
+texture = ExtResource("15_tw6dn")
+
+[node name="vaso_vacio" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(188, 467)
+scale = Vector2(1.47583, 1.39883)
+texture = ExtResource("16_yy6f6")
+
+[node name="vaso_con_agua" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(140, 472)
+scale = Vector2(0.491943, 0.485596)
+texture = ExtResource("17_ugftd")
+
+[node name="estufa" type="Sprite2D" parent="."]
+position = Vector2(920, 467)
+scale = Vector2(1.184, 1.388)
+texture = ExtResource("18_f630p")
+
+[node name="olla_vacia" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(912, 334.125)
+scale = Vector2(5.17949, 4.87319)
+texture = ExtResource("19_ohocd")
+offset = Vector2(1, 0)
+
+[node name="olla_con_agua" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(926, 334)
+scale = Vector2(1.50506, 1.44913)
+texture = ExtResource("20_pydt3")
+
+[node name="olla_con_huevo" type="Sprite2D" parent="."]
+position = Vector2(935, 334)
+scale = Vector2(2.13311, 2.10726)
+texture = ExtResource("21_ke64h")
+
+[node name="plato_vacio" type="Sprite2D" parent="."]
+position = Vector2(393, 523)
+scale = Vector2(1.26163, 1.15601)
+texture = ExtResource("22_kmbed")
+
+[node name="cuchara_con_huevo" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1053, 268)
+scale = Vector2(2.37981, 2.4482)
+texture = ExtResource("23_mhc0r")
+
+[node name="cuchara" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(924, 570)
+rotation = -1.0472
+scale = Vector2(1.22173, 1.27298)
+texture = ExtResource("24_wq83k")
+
+[node name="huevo" type="Sprite2D" parent="."]
+position = Vector2(397, 497)
+rotation = -1.57079
+scale = Vector2(0.517789, 0.47499)
+texture = ExtResource("25_vr651")
+
+[node name="sal" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(501, 414)
+texture = ExtResource("26_8tv34")
+
+[node name="cuchara_sal" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(490, 282)
+scale = Vector2(0.306299, 0.382353)
+texture = ExtResource("27_cio0b")
+
+[node name="cuchillo_arriba" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(488.821, 500.696)
+rotation = 2.35619
+scale = Vector2(0.723161, 0.727521)
+texture = ExtResource("28_0f05y")
+
+[node name="chia" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(446, 467)
+scale = Vector2(0.282958, 0.294931)
+texture = ExtResource("29_n68kq")
+
+[node name="cuchara_chia" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(501, 363)
+texture = ExtResource("30_l5dlu")
+
+[node name="cuchara_pimienta" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(581, 514)
+texture = ExtResource("31_rnr2u")
+
+[node name="exprimidor" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(657, 531)
+rotation = -1.57079
+scale = Vector2(1.67073, 1.49567)
+texture = ExtResource("32_f2crs")
+
+[node name="exprimidor_abierto" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(381.5, 334.75)
+scale = Vector2(1.41398, 1.37977)
+texture = ExtResource("33_w2hrm")
+
+[node name="exprimidor_con_limon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(356.5, 281.25)
+scale = Vector2(1.43919, 1.30938)
+texture = ExtResource("34_8mkvi")
+
+[node name="huevo_pelado" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(336, 505)
+scale = Vector2(0.348291, 0.321795)
+texture = ExtResource("35_w6hph")
+
+[node name="huevo_mitad" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(405, 513)
+scale = Vector2(0.258974, 0.27094)
+texture = ExtResource("36_3occa")
+
+[node name="jugo_limon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(438, 513)
+scale = Vector2(0.351948, 0.301471)
+texture = ExtResource("37_iuqrv")
+
+[node name="limon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(463, 505)
+scale = Vector2(0.489437, 0.483471)
+texture = ExtResource("38_flmiq")
+
+[node name="limon_mitad" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(481, 467)
+scale = Vector2(0.5, 0.485348)
+texture = ExtResource("39_rq7va")
+
+[node name="pan" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(437.75, 525.25)
+scale = Vector2(0.489744, 0.438462)
+texture = ExtResource("40_7krdq")
+
+[node name="pimienta" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(581, 397)
+texture = ExtResource("41_x0w5t")
+
+[node name="tostadora" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(450.5, 501)
+scale = Vector2(1.41438, 1.29457)
+texture = ExtResource("42_61fdv")
+
+[node name="tostadora_con_pan" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(464, 513)
+scale = Vector2(1.65953, 1.69455)
+texture = ExtResource("43_7f8lm")
+
+[node name="musicaa" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("44_yy6f6")
+autoplay = true
+parameters/looping = false
